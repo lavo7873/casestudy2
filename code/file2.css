@@ -66,17 +66,50 @@ nav {
 }
 .nav-movie {
     background-color: lightgray;
-    width: 300px;
+    width: 25%;
     padding-top: 20px;
     padding-left: 5px;
+    float: left;
+    height: 650px;
 }
 .nav-movie h1 {
     text-align: center;
+    background-color:whitesmoke ;
+    padding-right: 10px;
+    margin-right: 10px;
 }
 .list-items {
     padding-top: 5px;
+    float: left;
 }
 .list-items li {
     padding-top: 10px;
     padding-left: 20px;
+}
+.list-items a{
+    color: black;
+}
+.content-movie {
+    background-color: aquamarine;
+    float: right;
+    width: 75%;
+    height: 650px;
+    padding: 10px;
+}
+.content-movie h1 {
+    text-align: center;
+    padding-top: 20px;
+    background-color: antiquewhite;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+
+}
+.box {
+
 }
