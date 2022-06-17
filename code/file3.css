@@ -136,7 +136,7 @@ html {
     position: absolute;
     width: 5rem;
     height: .2rem;
-    background-color: white;
+    background-color: #ff3d00;
     left: 50%;
     transform: translateX(-50%) scale(0);
     bottom: 0;
