@@ -207,24 +207,28 @@ html {
 }
 
 #about {
-    width: 20%;
+    width: 100%;
     margin-top: 30px;
     padding: 10px 20px;
-    background-color: lightgrey;
+    background-color: white;
     height: 700px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .about-container {
     height: 650px;
 }
 
 .sidebar {
+    width: 20%;
     float: left;
+    position: relative;
+    background-color: lightgrey;
 }
 .sidebar h1 {
     font-size: 5.2rem;
     background-color: white;
     text-align: center;
+    margin: 10px 10px;
 }
 
 .sidenav {
@@ -274,13 +278,39 @@ html {
         margin-top: 10px;
     }
 }
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 768px) {
     #about {
-        width: 20%;
-        margin-bottom: 10px;
+        width: 25%;
     }
     .sidebar {
         width: 100%;
+
+    }
+    .sidenav {
+        width: 40%;
+        font-size: 7.2rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .sidenav a {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 1260px) {
+    #about {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .sidebar {
+        width: 20%;
+        float: left;
+        margin-left: -20px;
+        margin-bottom: 20px;
+    }
+    .side-movie {
+        width: 80%;
+        float: right;
     }
     .sidebar h1 {
         font-size: 5.2rem;
@@ -288,6 +318,7 @@ html {
     .sidenav {
         width: 45%;
         justify-content: center;
+        margin-left: 10px;
     }
     .sidenav a {
         font-size: 19px;
@@ -295,7 +326,27 @@ html {
     }
 
 }
-  
+
+.side-movie {
+    width: 81%;
+    float: right;
+    background-color: lightgrey;
+    height: 733px;
+    margin-right: -16px;
+}
+
+.side-movie h2 {
+    background-color: white;
+    font-size: 5.2rem;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+  } 
 #hire {
     min-height: 10vh;
     flex-direction: column;
