@@ -223,6 +223,7 @@ html {
     float: left;
     position: relative;
     background-color: lightgrey;
+    height: 780px;
 }
 .sidebar h1 {
     font-size: 5.2rem;
@@ -243,7 +244,7 @@ html {
 
 }
   
-  .sidenav a {
+.sidenav a {
     margin-top: 15px;
     padding: 6px 8px 6px -5px;
     text-decoration: none;
@@ -251,19 +252,68 @@ html {
     color: white;
     display: block;
     float: left;
-  }
+}
   
   .sidenav a:hover {
     color: black;
-  }
+}
+
+.button-movie {
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.button-movie .button1:hover {
+    background-color: black;
+    color: white;
+}
+.button-movie .button2:hover {
+    background-color: black;
+    color: white;
+}
+.button-movie .button3:hover {
+    background-color: black;
+    color: white;
+}
+.button-movie .button4:hover {
+    background-color: black;
+    color: white;
+}
+.button-movie .button5:hover {
+    background-color: black;
+    color: white;
+}
+.button-movie .button6:hover {
+    background-color: black;
+    color: white;
+}
+.button-movie .button7:hover {
+    background-color: black;
+    color: white;
+}
+.button-movie .button8:hover {
+    background-color: black;
+    color: white;
+}
+.button-movie .button9:hover {
+    background-color: black;
+    color: white;
+}
 
 @media screen and (min-width: 400px) {
     #about {
-        width: 35%;
+        width: 100%;
         margin-bottom: 10px;
+        margin-left: -20px;
     }
     .sidebar {
-        width: 100%;
+        display: inline-block;
+        width: 20%;
+        float: left;
 
     }
     .sidebar h1 {
@@ -271,23 +321,62 @@ html {
     }
     .sidenav {
         width: 100%;
+        float: left;
         justify-content: center;
     }
     .sidenav a {
         font-size: 15px;
         margin-top: 10px;
     }
+    .side-movie {
+        float: right;
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+    .side-movie h2 {
+        width: 100px;
+        height: 40px;
+        padding: 10px 10px;
+        text-align: center;
+        justify-content: center;
+        
+        
+    }
+    .side-movie .title-movie {
+        font-size: 4.0rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        height: 60px;
+        margin-left: -5px;
+    }
+    .side-movie .content-box {
+        display: inline-block;
+        width: 100%;
+    }
+    .item {
+        display: flex;
+        flex-flow: column wrap;
+    
+    }
+    .button-movie {
+        margin-left: 120px;
+        display: flex;
+        width: 100%;
+        padding: 10px 10px;
+    }
 }
 @media screen and (min-width: 768px) {
     #about {
-        width: 25%;
+        width: 100%;
     }
     .sidebar {
-        width: 100%;
+        width: 20%;
 
     }
     .sidenav {
-        width: 40%;
+        width: 70%;
         font-size: 7.2rem;
         justify-content: center;
         text-align: center;
@@ -305,11 +394,14 @@ html {
     .sidebar {
         width: 20%;
         float: left;
-        margin-left: -20px;
+        margin-left: -10px;
         margin-bottom: 20px;
     }
+    .sidebar h1 {
+        margin-left: 20px ;
+    }
     .side-movie {
-        width: 80%;
+        width: 100%;
         float: right;
     }
     .sidebar h1 {
@@ -318,21 +410,67 @@ html {
     .sidenav {
         width: 45%;
         justify-content: center;
-        margin-left: 10px;
+        margin-left: 20px;
     }
     .sidenav a {
         font-size: 19px;
         margin-top: 10px;
     }
+    .button-movie {
+        text-align: center;
+        margin-left: 500px;
+    }
+    .title-movie {
+        width: 100%;
+        font-size: 5.2rem;
+        justify-content: center;
+        text-align: center;
+        display: inline-block;
+        margin-left: 1000px;
+    }
+}
 
+
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.item {
+    background-color: white;
+    height: 300px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.item a{
+    font-size: 2.6rem;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    border-style: ridge;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.item a:hover {
+    opacity: 0.8;
+    color: orangered;
+}
+.item p {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .side-movie {
-    width: 81%;
+    width: 80%;
     float: right;
     background-color: lightgrey;
-    height: 733px;
-    margin-right: -16px;
+    height: 780px;
+
+    margin-bottom: 10px;
 }
 
 .side-movie h2 {
@@ -342,11 +480,6 @@ html {
     margin: 10px 10px;
 }
 
-ul {
-    display: inline-flex;
-    list-style: none;
-    padding: 0;
-  } 
 #hire {
     min-height: 10vh;
     flex-direction: column;
